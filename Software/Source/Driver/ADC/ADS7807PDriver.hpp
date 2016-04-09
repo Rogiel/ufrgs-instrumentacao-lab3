@@ -7,17 +7,20 @@
 // https://github.com/Rogiel/ufrgs-instrumentacao-lab3
 //
 
-#include "Application.hpp"
 
-/**
- * Entry point function
- */
-int main () {
-	WDTCTL = WDTPW | WDTHOLD;
+#pragma once
 
-	Application application;
-	application.init();
-	while(true) {
-		application.loop();
+#include "ADS78xxDriver.hpp"
+
+namespace Driver {
+	namespace ADC {
+
+		class ADS7807PDriver: public ADS78xxDriver {
+
+		};
+
 	}
 }
+
+
+

@@ -17,10 +17,13 @@ set(CMAKE_EXE_LINKER_FLAGS "${MSP_CPU_FLAG} -lm -Wl -Os")
 add_executable(msp430-data-logger
     Source/main.cpp
     Source/Application.cpp
-    Source/Application.h
-    Source/IO/Button.h
-    Source/IO/Pin.h
-)
+        Source/Application.hpp
+        Source/IO/Button.hpp
+        Source/IO/Pin.hpp
+
+        Source/Driver/ADC/ADS7807PDriver.cpp
+        Source/Driver/ADC/ADS7807PDriver.hpp
+        Source/Driver/ADC/ADS78xxDriver.cpp Source/Driver/ADC/ADS78xxDriver.hpp Source/Driver/ADC/ADS12xxDriver.cpp Source/Driver/ADC/ADS12xxDriver.hpp)
 
 # Create a flash target if the toolchain file was selected correctly
 if (MSP_TOOLCHAIN)

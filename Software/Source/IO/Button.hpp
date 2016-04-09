@@ -9,7 +9,7 @@
 
 #pragma once
 
-#include "Pin.h"
+#include "Pin.hpp"
 
 #include <stdint.h>
 #include <stdbool.h>

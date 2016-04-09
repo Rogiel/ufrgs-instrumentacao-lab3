@@ -9,8 +9,8 @@
 
 #pragma once
 
-#include "IO/Pin.h"
-#include "IO/Button.h"
+#include "IO/Pin.hpp"
+#include "IO/Button.hpp"
 
 class Application {
 public:
@@ -29,11 +29,5 @@ public:
 	 * Executa o loop principal
 	 */
 	void loop();
-
-public:
-	/**
-	 * Retorna uma instância compartilhada do aplicativo
-	 */
-	static Application& sharedApplication();
 
 };

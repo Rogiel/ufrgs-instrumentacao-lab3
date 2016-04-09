@@ -7,7 +7,7 @@
 // https://github.com/Rogiel/ufrgs-instrumentacao-lab3
 //
 
-#include "Application.h"
+#include "Application.hpp"
 
 Application::Application() { }
 
